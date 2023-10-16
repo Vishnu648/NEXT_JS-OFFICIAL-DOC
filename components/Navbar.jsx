@@ -2,8 +2,6 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-
-
 const Navbar = () => {
     const pathname=usePathname();
 
@@ -12,7 +10,7 @@ const Navbar = () => {
             <ul className="w-full h-full flex items-center justify-around">
                 <li>
                     <Link
-                        className={`link ${pathname === "/" ? "text-red-800" : ""}`}
+                        className={`link ${pathname === "/" ? "text-[rgb(1,113,243)]" : ""}`}
                         href="/"
                     >
                         Home
@@ -20,7 +18,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className={`link ${pathname === "/about" ? "text-red-800" : ""}`}
+                        className={`link ${pathname === "/about" ? "text-[rgb(1,113,243)]" : ""}`}
                         href="/about"
                     >
                         About
@@ -28,10 +26,18 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        className={`link ${pathname === "/about/us" ? "text-red-800" : ""}`}
+                        className={`link ${pathname === "/about/us" ? "text-[rgb(1,113,243)]" : ""}`}
                         href="/about/us"
                     >
                         About us
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={`link ${pathname === "/contact" ? "text-[rgb(1,113,243)]" : ""}`}
+                        href="/contact"
+                    >
+                        Contact Us
                     </Link>
                 </li>
             </ul>
