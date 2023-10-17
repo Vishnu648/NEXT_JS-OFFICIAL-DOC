@@ -6,8 +6,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-evenly p-24">
       Home page
       <Image
-        width={500}
-        height={500}
+        width={300}
+        height={300}
         src={profilePic}
         alt="author"
         placeholder="blur"
