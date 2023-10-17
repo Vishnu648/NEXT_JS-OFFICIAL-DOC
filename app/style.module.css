@@ -1,5 +1,6 @@
 .container{
-    border:1px solid white;
+    border:2px solid darkgray;
     padding: 24px;
     margin-top: 8px;
+    height: 100vh;
 }

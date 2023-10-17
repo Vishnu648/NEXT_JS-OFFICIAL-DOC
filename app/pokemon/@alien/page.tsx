@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>alien</div>
+    <div className='border border-red-200 w-24 h-24 p-1 flex justify-center items-center'>alien</div>
   )
 }
 

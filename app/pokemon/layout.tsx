@@ -7,7 +7,7 @@ export default function RootLayout({
   player: React.ReactNode;
   alien: React.ReactNode;
 }) {
-  return <div>
+  return <div className="flex border h-screen border-white gap-1 justify-around py-4">
     {children}
     {player}
     {alien}
