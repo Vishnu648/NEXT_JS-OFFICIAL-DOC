@@ -1,3 +1,5 @@
+import {AuthError} from '@/lib/exception'
+
 const getData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
   return res.json();
@@ -15,7 +17,7 @@ const page = async () => {
   const data = await getData();
 
   if(!session)
-  throw new Error('not Authorized')
+  throw new AuthError
 
   return (
     <div className="flex flex-col items-center">
