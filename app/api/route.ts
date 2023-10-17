@@ -1,4 +1,4 @@
-export async function GET() {
+export default async function GET() {
     const res = await fetch('https://jsonplaceholder.typicode.com/todos', {
       headers: {
         'Content-Type': 'application/json',

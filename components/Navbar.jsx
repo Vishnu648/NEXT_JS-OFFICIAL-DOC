@@ -40,6 +40,14 @@ const Navbar = () => {
                         Contact Us
                     </Link>
                 </li>
+                <li>
+                    <Link
+                        className={`link ${pathname === "/pokemon" ? "text-[rgb(1,113,243)]" : ""}`}
+                        href="/pokemon"
+                    >
+                        Pokemon
+                    </Link>
+                </li>
             </ul>
 
         </nav>
